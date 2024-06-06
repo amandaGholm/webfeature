@@ -16,7 +16,8 @@
           <div class="scroll-aninamtioen-container simple">
             <div
               class="sticky-content-container sticky-element"
-              style="height:100vh;">
+              style="height:100vh;"
+            >
               <div class="svg-drawing">
                 <svg
                   id="svg"
@@ -43,65 +44,98 @@
             <div class="trigger top-trigger"></div>
             <div class="trigger bottom-trigger"></div>
           </div>
+          <!----------------------------------------------------------------------------------------->
+          <div class="scroll-aninamtioen-container simple">
+            <div
+              class="sticky-content-container sticky-element"
+              style="height:100vh;"
+            >
+              <div class="svg-drawing">
+                <svg
+                  id="svg1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="311"
+                  height="633"
+                  viewBox="0 0 311 633"
+                  fill="none"
+                >
+                  <path
+                    class="theline"
+                    d="M29.058 2C29.058 7.89297 31.4168 13.2468 31.4168 19.1232C31.4168 24.6406 32.3862 28.4887 34.7366 33.4508C36.2697 36.6874 36.1344 39.319 36.1344 42.886C36.1344 48.4183 37.707 53.2165 37.707 58.6114C37.707 61.6546 37.707 64.6977 37.707 67.7409C37.707 72.454 39.2795 76.8563 39.2795 81.4132C39.2795 84.6083 41.8548 91.6367 39.629 93.9935C35.5631 98.2985 34.5619 102.189 34.5619 108.234C34.5619 116.329 34.5619 124.425 34.5619 132.521C34.5619 138.378 33.7756 144.566 33.7756 150.605C33.7756 152.542 35.7818 152.059 33.7756 152.177C32.9982 152.223 32.2484 155.294 32.2031 156.109C31.8725 162.059 30.5889 171.094 34.955 175.46C38.4797 178.984 38.4932 183.43 38.4932 187.996C38.4932 193.67 36.636 202.279 39.1048 207.216C39.3991 207.805 41.0123 212.473 39.2795 211.759C36.6228 210.665 36.1344 210.492 36.1344 213.681C36.1344 218.595 37.224 225.23 35.7413 229.974C34.384 234.318 36.4745 239.627 34.1688 243.778C31.235 249.059 30.6305 252.668 30.6305 258.717C30.6305 264.19 30.6581 268.493 28.3154 273.569C25.2057 280.306 22.9859 287.694 20.409 294.667C17.9987 301.189 19.1218 306.351 11.7601 303.753C10.4339 303.285 3.67511 315.548 2.93639 317.469C2.09078 319.667 -4.59997 324.342 2.32485 325.157C3.8142 325.332 7.39084 330.504 7.78505 331.884C9.64896 338.407 14.0446 345.6 21.5884 345.6C26.7257 345.6 34.4694 352.965 37.707 356.608C40.1451 359.35 41.9898 363.074 44.6087 365.431C47.6786 368.194 50.132 368.863 53.8692 369.93C60.8721 371.931 69.2516 368.894 75.4479 366.829"
+                    stroke="#FF5000"
+                    stroke-width="3"
+                    stroke-linecap="round"></path>
+                </svg>
+                rgba(255, 80, 0, 1)
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content-container">
+            <div class="slide-text-content placering">
+              <p>Maliks Udfordringer</p>
+            </div>
+          </div>
+          <div class="trigger top-trigger"></div>
+          <div class="trigger bottom-trigger"></div>
         </div>
       </body>
     </main>
   </body>
-
-  <script>
-    import { gsap, ScrollTrigger, DrawSVGPlugin } from "gsap-trial/all";
-    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
-
-    gsap.defaults({ ease: "none" });
-
-    const main = gsap.timeline({
-      scrollTrigger: {
-        trigger: "#svg",
-        scrub: true,
-        start: "top center",
-        end: "bottom center",
-      },
-    });
-
-    main.from(".theline", { drawSVG: 0, duration: 4 }, 0);
-  </script>
-
-  <style>
-    .scroll-aninamtioen-container .sticky-content-container {
-      position: absolute;
-      width: 39vh;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      z-index: 0;
-    }
-    .scroll-aninamtioen-container {
-      min-height: 100vh;
-      background-color: #000e38;
-      position: relative;
-      font-size: 16px;
-    }
-
-    /* The line er kun for GSAP */
-    .theline {
-      max-width: 100%;
-    }
-
-    /* SVG */
-    .svg-drawing {
-      position: relative;
-      pointer-events: none;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      height: 100%;
-    }
-    svg {
-      position: relative;
-      display: block;
-      width: auto;
-      height: 100%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-    }
-    /* ------------ */
-  </style>
 </html>
+
+<script>
+  import { gsap, ScrollTrigger, DrawSVGPlugin } from "gsap-trial/all";
+  gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+
+  gsap.defaults({ ease: "none" });
+
+  const main = gsap.timeline({
+    scrollTrigger: {
+      trigger: "#svg",
+      scrub: true,
+      start: "top center",
+      end: "bottom center",
+    },
+  });
+
+  main.from(".theline", { drawSVG: 0, duration: 4 }, 0);
+</script>
+
+<style>
+  .scroll-aninamtioen-container .sticky-content-container {
+    position: absolute;
+    width: 39vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+  }
+  .scroll-aninamtioen-container {
+    min-height: 100vh;
+    background-color: #000e38;
+    position: relative;
+    font-size: 16px;
+  }
+
+  /* The line er kun for GSAP */
+  .theline {
+    max-width: 100%;
+  }
+
+  /* SVG */
+  .svg-drawing {
+    position: relative;
+    pointer-events: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 100%;
+  }
+  svg {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  /* ------------ */
+</style>
