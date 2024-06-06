@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets";
+import gl from "../assets/images/gl.png";
 ---
 
 <html lang="en">
@@ -66,6 +67,52 @@ import { Image } from "astro:assets";
                 >
                   <path
                     class="theline"
+                    d="M54.6155 1.62573C54.6155 5.65226 56.1364 15.847 52.8442 18.9456C52.2146 19.5382 46.3278 10.813 43.1509 12.4014C41.0157 13.4691 43.1748 17.0681 43.7906 18.4536C44.3339 19.6761 41.017 17.0007 40.6415 17.0758C39.4765 17.3088 41.7682 20.8442 40.2479 21.0614C39.281 21.1995 34.6312 20.4232 34.2942 21.6026C34.0215 22.5569 34.36 23.6756 34.245 24.6533C34.0102 26.6486 23.3446 25.4834 21.5503 25.7358C19.2796 26.0551 17.589 27.4174 15.1046 27.7531C10.8062 28.334 6.35642 27.5926 2.11466 28.2452C1.80603 28.2927 8.62433 54.6633 9.24926 57.7185C9.86811 60.744 9.40589 50.4358 11.7095 55.7011C14.9802 63.1772 13.8482 57.5551 16.7283 54.963C18.5362 53.3359 20.9956 60.7983 21.3043 61.6056C23.268 66.7415 24.0382 60.3812 24.9454 58.0629C26.1751 54.9202 26.2739 58.4152 26.2739 59.6866C26.2739 63.8197 27.1566 60.8186 28.7341 58.3089C29.3654 57.3046 34.5 48.2103 35.9671 50.2887C36.8642 51.5595 36.3365 59.4543 37.9353 58.555C44.7733 54.7086 44.5112 54.7604 44.8731 62.5405C45.019 65.6777 50.1834 62.1529 51.7617 61.5072C54.5235 60.3773 53.9285 62.3294 56.1408 62.5897C60.4481 63.0964 65.5286 61.0353 69.9672 60.966C73.1328 60.9165 74.6266 60.9376 77.3478 59.3914C79.9384 57.9195 83.0491 57.2358 86.0078 57.4725C88.5097 57.6726 90.1082 59.6854 92.3551 60.0311C95.2455 60.4758 97.0509 57.7137 99.7849 57.8169C103.172 57.9447 104.204 62.2098 107.313 62.6881C110.495 63.1776 112.829 66.839 113.07 62.7373C113.276 59.2419 118.384 67.764 118.384 62.3437C118.384 57.7366 129.223 66.8427 130.587 64.115C132.271 60.7462 132.177 60.6696 136.786 62.9341C146.23 67.5733 154.853 70.4722 165.177 72.4797C171.011 73.6142 174.199 74.592 179.988 73.0702C194.761 69.1865 209.253 65.376 224.665 66.4768C228.214 66.7303 230.982 68.2032 234.063 68.8878C237.522 69.6564 241.788 68.937 245.331 68.937C248.664 68.937 241.662 50.8213 241.198 49.3538C241.164 49.2459 236.573 36.187 239.23 37.2495C244.797 39.4764 249.654 45.7521 253.696 49.9442C255.367 51.6781 257.068 54.504 257.484 51.1743C257.952 47.4305 260.208 48.7316 261.913 51.0267C264.682 54.7553 265.509 59.4957 268.063 63.2293C268.672 64.119 277.2 67.833 277.609 67.4609C280.237 65.0719 281.144 59.579 286.17 61.0152C289.922 62.087 294.954 56.1951 298.865 55.6519C300.696 55.3976 299.947 60.8156 299.947 61.8516C299.947 62.0902 300.151 65.5054 299.505 65.2467C298.067 64.6716 306.274 52.085 306.984 50.8791C311.743 42.7875 309.078 52.0783 307.919 55.7503C306.452 60.3933 308.079 54.4665 308.804 52.9949C310.339 49.8807 312.021 45.4486 314.512 42.9572C317.564 39.9051 313.441 51.6929 311.51 55.5535C307.905 62.7647 312.347 57.567 312.347 53.8806"
+                    stroke="#FF5000"
+                    stroke-width="3"
+                    stroke-linecap="round"></path></svg
+                >
+              </div>
+            </div>
+          </div>
+          <div class="scroll-content-container">
+            <div class="slide-text-content placering">
+              <h2>En grønlandsk opvækst</h2>
+              <p>
+                Malik, en 22-årig fra Nuuk i Grønland, har altid været tæt
+                forbundet med naturen. Opvokset i en naturglad familie, lærte
+                han tidligt at fiske af sin far. Som barn tilbragte han mange
+                timer med ham på fisketure og vandreture omkring Nuuk, hvilket
+                gav ham stor glæde og en livslang passion for naturen.
+              </p>
+              <Image
+                src={gl}
+                alt="Fluefisker paa Grønland"
+                class="galleryIMG"
+              />
+            </div>
+          </div>
+          <div class="trigger top-trigger"></div>
+          <div class="trigger bottom-trigger"></div>
+        </div>
+        <!----------------------------------------------------------------------------------------->
+        <div class="webfeature-container">
+          <div class="scroll-aninamtioen-container simple">
+            <div
+              class="sticky-content-container sticky-element"
+              style="height:100vh;"
+            >
+              <div class="svg-drawing">
+                <svg
+                  id="svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="311"
+                  height="633"
+                  viewBox="0 0 311 633"
+                  fill="none"
+                >
+                  <path
+                    class="theline"
                     d="M302.471 2C302.471 4.41119 301.926 4.95994 300.822 6.94771C299.17 9.9205 302.344 9.73744 302.471 11.8954C302.68 15.4436 301.002 22.5948 304.12 25.0893C305.277 26.0145 304.67 29.2111 304.67 30.5868C304.67 32.937 307.318 35.8858 306.808"
                     stroke="#FF5000"
                     stroke-width="3"
@@ -75,138 +122,92 @@ import { Image } from "astro:assets";
             </div>
             <div class="scroll-content-container">
               <div class="slide-text-content placering">
-                <h2>En grønlandsk opvækst</h2>
-                <p>
-                  Malik, en 22-årig fra Nuuk i Grønland, har altid været tæt
-                  forbundet med naturen. Opvokset i en naturglad familie, lærte
-                  han tidligt at fiske af sin far. Som barn tilbragte han mange
-                  timer med ham på fisketure og vandreture omkring Nuuk, hvilket
-                  gav ham stor glæde og en livslang passion for naturen.
-                </p>
-                <Image
-                  src={gl}
-                  alt="Fluefisker paa Grønland"
-                  class="galleryIMG"
-                />
+                <p>Maliks Udfordringer</p>
               </div>
             </div>
             <div class="trigger top-trigger"></div>
             <div class="trigger bottom-trigger"></div>
           </div>
-          <!----------------------------------------------------------------------------------------->
-          <div class="webfeature-container">
-            <div class="scroll-aninamtioen-container simple">
-              <div
-                class="sticky-content-container sticky-element"
-                style="height:100vh;"
-              >
-                <div class="svg-drawing">
-                  <svg
-                    id="svg"
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="311"
-                    height="633"
-                    viewBox="0 0 311 633"
-                    fill="none"
-                  >
-                    <path
-                      class="theline"
-                      d="M302.471 2C302.471 4.41119 301.926 4.95994 300.822 6.94771C299.17 9.9205 302.344 9.73744 302.471 11.8954C302.68 15.4436 301.002 22.5948 304.12 25.0893C305.277 26.0145 304.67 29.2111 304.67 30.5868C304.67 32.937 307.318 35.8858 306.808"
-                      stroke="#FF5000"
-                      stroke-width="3"
-                      stroke-linecap="round"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="scroll-content-container">
-                <div class="slide-text-content placering">
-                  <p>Maliks Udfordringer</p>
-                </div>
-              </div>
-              <div class="trigger top-trigger"></div>
-              <div class="trigger bottom-trigger"></div>
-            </div>
-          </div>
         </div>
       </body>
     </main>
   </body>
-
-  <script>
-    import { gsap, ScrollTrigger, DrawSVGPlugin } from "gsap-trial/all";
-    gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
-
-    gsap.defaults({ ease: "none" });
-
-    const lines = gsap.utils.toArray(".theline");
-    lines.forEach((line) => {
-      gsap.from(line, {
-        drawSVG: 0,
-        duration: 4,
-        scrollTrigger: {
-          trigger: line,
-          start: "top top",
-          end: "+=300",
-          scrub: true,
-        },
-      });
-    });
-
-    //   const lines = gsap.utils.toArray(".theline");
-    //   lines.forEach((line) => {
-    //     gsap.from(line, {
-    //       duration: 4,
-    //       drawSVG: 0,
-    //       scrollTrigger: {
-    //         trigger: "#svg",
-    //         start: "top top", // Start animationen, når linjen kommer ind i 80% af viewporten
-    //         end: "bottom bottom", // Slut animationen, når linjen når 20% af viewporten
-    //         scrub: true, // Animationen vil følge rullebevægelsen
-    //       },
-    //     });
-    //   });
-  </script>
-
-  <style>
-    .hojde {
-      height: 300px;
-    }
-
-    .scroll-aninamtioen-container .sticky-content-container {
-      position: absolute;
-      width: 39vh;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      z-index: 0;
-    }
-    .scroll-aninamtioen-container {
-      min-height: 100vh;
-      background-color: #000e38;
-      position: relative;
-      font-size: 16px;
-    }
-
-    /* The line er kun for GSAP */
-    .theline {
-      max-width: 100%;
-    }
-
-    /* SVG */
-    .svg-drawing {
-      position: relative;
-      pointer-events: none;
-      left: 50%;
-      transform: translate(-50%, 0%);
-      height: 100%;
-    }
-    svg {
-      position: relative;
-      display: block;
-      width: auto;
-      height: 100%;
-      left: 50%;
-      transform: translate(-50%, 0%);
-    }
-    /* ------------ */
-  </style>
 </html>
+
+<script>
+  import { gsap, ScrollTrigger, DrawSVGPlugin } from "gsap-trial/all";
+  gsap.registerPlugin(ScrollTrigger, DrawSVGPlugin);
+
+  gsap.defaults({ ease: "none" });
+
+  const lines = gsap.utils.toArray(".theline");
+  lines.forEach((line) => {
+    gsap.from(line, {
+      drawSVG: 0,
+      duration: 4,
+      scrollTrigger: {
+        trigger: line,
+        start: "top top",
+        end: "+=300",
+        scrub: true,
+      },
+    });
+  });
+
+  //   const lines = gsap.utils.toArray(".theline");
+  //   lines.forEach((line) => {
+  //     gsap.from(line, {
+  //       duration: 4,
+  //       drawSVG: 0,
+  //       scrollTrigger: {
+  //         trigger: "#svg",
+  //         start: "top top", // Start animationen, når linjen kommer ind i 80% af viewporten
+  //         end: "bottom bottom", // Slut animationen, når linjen når 20% af viewporten
+  //         scrub: true, // Animationen vil følge rullebevægelsen
+  //       },
+  //     });
+  //   });
+</script>
+
+<style>
+  .hojde {
+    height: 300px;
+  }
+
+  .scroll-aninamtioen-container .sticky-content-container {
+    position: absolute;
+    width: 39vh;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 0;
+  }
+  .scroll-aninamtioen-container {
+    min-height: 100vh;
+    background-color: #000e38;
+    position: relative;
+    font-size: 16px;
+  }
+
+  /* The line er kun for GSAP */
+  .theline {
+    max-width: 100%;
+  }
+
+  /* SVG */
+  .svg-drawing {
+    position: relative;
+    pointer-events: none;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    height: 100%;
+  }
+  svg {
+    position: relative;
+    display: block;
+    width: auto;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+  /* ------------ */
+</style>
