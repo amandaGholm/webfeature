@@ -32,7 +32,16 @@ h2 {
   padding-bottom: 16px;
 }
 
+.label {
+  color: white;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "Switzer";
   src: url("/Switzer-Variable.ttf");
 }
+
+
