@@ -16,20 +16,17 @@
   <body>
     <main>
       <section class="meta-container">
-        <div class="meta-heading">
-          <h1>Maliks rejse fra fisketrawl til flue</h1>
-        </div>
-        <div class="meta-sub metaBody">
-          <p>
-            22-årige Malik, en ung grønlænder, var fanget i en ond cirkel af
-            sæsonarbejde på fisketrawlere. Ustabile arbejdsperioder, pludselige
-            penge mellem hænderne og lange perioder uden beskæftigelse var en
-            farlig cocktail og gik ud over hans mentale og fysiske sundhed.
-            Arctic Flyfishing har sat fokus på de grønlandske unges trivsel og
-            problemerne bag. Læs om Maliks kamp for at bryde ud af skadelige
-            mønstre og hvordan Arctic Flyfishing arbejder for at forbedre
-            arbejdsmulighederne for den unge grønlandske befolkning.
-          </p>
+        <div class="meta-copy">
+          <div class="meta-heading">
+            <h1>Maliks rejse fra fisketrawl til flue</h1>
+          </div>
+          <div class="meta-sub metaBody">
+            <p>
+              Læs om Maliks kamp for at bryde ud af skadelige mønstre og hvordan
+              Arctic Flyfishing arbejder for at forbedre arbejdsmulighederne for
+              den unge grønlandske befolkning.
+            </p>
+          </div>
         </div>
         <div class="CTAer">
           <button class="primary">
@@ -65,19 +62,26 @@
     color: #ffffff;
     max-width: 64ch;
     margin: auto;
-    padding-bottom: 16px;
+    text-align: center;
   }
 
   .meta-container {
     display: flex;
     flex-direction: column;
-    gap: 48px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 24px 0 24px;
+  }
+
+  .meta-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     justify-content: center;
     align-items: center;
     margin: 0 24px 0 24px;
   }
   .metaBody {
-    padding-top: 8px;
     color: #ffffff;
     font-family: "Open Sans";
     font-size: 1rem;
@@ -91,8 +95,9 @@
 
   .CTAer {
     display: flex;
-    flex-direction: row;
-    gap: 32px;
+    flex-direction: column;
+    gap: 16px;
+    padding-top: 48px;
   }
 
   button {
@@ -158,18 +163,24 @@
       color: #ffffff;
       max-width: 64ch;
       margin: auto;
-      padding-bottom: 16px;
     }
 
     .meta-container {
       display: flex;
       flex-direction: column;
-      gap: 48px;
       justify-content: center;
       align-items: center;
     }
+
+    .meta-copy {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      justify-content: center;
+      align-items: center;
+      margin: 0 24px 0 24px;
+    }
     .metaBody {
-      padding-top: 8px;
       color: #ffffff;
       font-family: "Open Sans";
       font-size: 1rem;
@@ -178,12 +189,14 @@
       max-width: 64ch;
       margin: auto;
       padding-bottom: 16px;
+      text-align: center;
     }
 
     .CTAer {
       display: flex;
       flex-direction: row;
-      gap: 32px;
+      gap: 16px;
+      padding-top: 48px;
     }
 
     button {
