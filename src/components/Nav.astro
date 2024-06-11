@@ -1,0 +1,148 @@
+---
+import { Image } from "astro:assets";
+import logoFisk from "../assets/images/Logo-AF.svg";
+import Button from "../components/Buttons.astro";
+---
+
+<header>
+  <nav class="nav-mobil">
+    <a href="/"><Image src={logoFisk} alt="logofsik" /></a>
+    <span id="openNavBtn">&#9776;</span>
+  </nav>
+
+  <div id="myNav" class="overlay">
+    <a href="/" id="closeBtn">&times;</a>
+
+    <div class="overlay-content">
+      <li>
+        <Button
+          class="knap"
+          href="/campqussuk/"
+          label="Camp Qusuk"
+          style="tertiary"
+        />
+      </li>
+      <li>
+        <Button
+          class="knap"
+          href="/omarcticflyfishing/"
+          label="Arctic Flyfishing"
+          style="tertiary"
+        />
+      </li>
+      <li>
+        <Button
+          class="knap"
+          href="/kontakt/#faq"
+          label="FAQ"
+          style="tertiary"
+        />
+      </li>
+      <li>
+        <Button class="knap" href="/" label="Læs om Malik" style="tertiary" />
+      </li>
+    </div>
+  </div>
+</header>
+<style>
+  #closeBtn {
+    text-decoration: none;
+  }
+
+  #openNavBtn {
+    font-size: 35px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: rgba(23, 23, 23, 0.753);
+    backdrop-filter: blur(20px);
+    transition: 0.5s;
+    display: none;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .overlay li {
+    padding: 8px;
+    text-decoration: none;
+    display: block;
+    transition: 0.3s;
+  }
+
+  /*  x-knappens placering og størrelsen */
+  .overlay #closeBtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+  }
+
+  .nav-desktop {
+    display: none;
+  }
+
+  .nav-mobil {
+    display: flex;
+    background: rgba(0, 14, 56, 0.5);
+    backdrop-filter: blur(20px);
+    border-radius: 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    margin: 24px 8px;
+  }
+  header {
+    position: fixed;
+    z-index: 100;
+    overflow: hidden;
+    width: 100%;
+  }
+</style>
+
+<script>
+  /* ------------Mobil menu---------- */
+  document.addEventListener("DOMContentLoaded", function () {
+    // Definer funktionen openNav
+    function openNav() {
+      var myNav = document.getElementById("myNav");
+      if (myNav) {
+        myNav.style.display = "block";
+      }
+    }
+
+    // Definer funktionen closeNav
+    function closeNav() {
+      var myNav = document.getElementById("myNav");
+      if (myNav) {
+        myNav.style.display = "none";
+      }
+    }
+
+    // Find knappen til at åbne overlay og tilføj event listener
+    var openNavBtn = document.getElementById("openNavBtn");
+    if (openNavBtn) {
+      openNavBtn.addEventListener("click", openNav);
+    }
+
+    // Find knappen til at lukke overlay og tilføj event listener
+    var closeBtn = document.getElementById("closeBtn");
+    if (closeBtn) {
+      closeBtn.addEventListener("click", closeNav);
+    }
+  });
+</script>

@@ -1,3 +1,7 @@
+---
+import Nav from "../components/Nav.astro";
+---
+
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -14,7 +18,9 @@
   </head>
 
   <body>
+    <Nav />
     <main>
+   
       <section class="meta-container">
         <div class="meta-copy">
           <div class="meta-heading">
@@ -45,8 +51,12 @@
     font-family: "Switzer";
     src: url("/Switzer-Variable.ttf");
   }
-  main {
+
+  body{
     background-color: #000e38;
+  }
+  main {
+
     width: 100vw;
     height: 100vh;
     display: flex;
